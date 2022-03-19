@@ -1,0 +1,75 @@
+:root {
+    --dark-blue-green: #182D40;
+    --medium-blue-green:#2A5559;
+    --blue-green:#468C8C;
+    --light-blue-green:#71D9CE;
+    --light-grey:#f2f2f2;
+}
+
+#header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100vw;
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+    background-color: var(--dark-blue-green);
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#header .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 15rem;
+    height: auto;
+}
+
+.header-navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 2rem;
+}
+
+.header-navigation-item  {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--light-grey);
+    transition: color 1s;
+    z-index: 2;
+}
+
+.header-navigation-item:hover{
+    color:var(--light-blue-green) ;
+}
+
+.header-navigation li {
+    position: relative;
+}
+
+.header-navigation li::before {
+    content:'';
+    width: .6rem;
+    height: 0%;
+    background: var(--light-grey);
+    transition: height 0.2s;
+    position: absolute;
+    z-index: 0;
+    left: -.6rem;
+}
+
+.header-navigation li:hover::before {
+    height: 100%;
+}
+  
+
