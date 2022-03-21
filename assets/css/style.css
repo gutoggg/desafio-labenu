@@ -13,6 +13,7 @@
 
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -365,7 +366,7 @@ body {
     .card {
         height:auto;
         width: 50vw;
-        max-width: 32rem;
+        max-width: 15rem;
     }
 }
 
@@ -413,5 +414,8 @@ body {
         height: 3px;
     }
 
+    .card {
+        max-width: 20rem;
+    }
 }
 
