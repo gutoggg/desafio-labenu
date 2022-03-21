@@ -263,7 +263,7 @@ body {
 }
 
 .form-email:focus,
-.form-message:focus {
+.form-message-area:focus {
     outline: none;
 } 
 
@@ -272,8 +272,10 @@ body {
     height: 10.4rem;
     background-color: transparent;
     border: solid 1.2px var(--light-grey);
+    color: var(--light-grey);
     box-sizing: border-box;
     margin-bottom: 2rem ;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-message-label {
@@ -393,6 +395,7 @@ body {
 
     .nav-list-item a {
         padding-bottom: 4px;
+        font-size: 1.5rem;
     }
 
     .nav-list-item::before {
