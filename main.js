@@ -4,9 +4,6 @@ const liNavigationList = document.querySelectorAll('.nav-list-item')
 const menuButton = document.querySelector('.menu-icon')
 const closeButton = document.querySelector('.close-icon')
 
-console.log(menuButton)
-console.log(ulNavigation)
-
 menuButton.addEventListener('click', () => {
     ulNavigation.classList.toggle('show')
 })

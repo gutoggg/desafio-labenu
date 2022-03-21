@@ -1,48 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>F4life | Aluguéis de Repúblicas</title>
+    <title>F4life</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-  <body>
+<body>
     <header id="header">
-      <div class="container">
-        <img class="logo" src="assets/img/logo.svg" alt="logo da F4life" />
-        <nav>
-          <ul class="header-navigation">
-            <li class="nav-list-item">
-              <a class="header-navigation-item" href="#">Quem Somos</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="header-navigation-item" href="#">Fale Conosco</a>
-            </li>
-            <li class="close">
-              <img
-                class="close-icon pointer"
-                src="assets/img/close-icon.svg"
-                alt=""
-              />
-            </li>
-          </ul>
-        </nav>
-        <img class="menu-icon pointer" src="assets/img/menu-icon.svg" alt="" />
-      </div>
+        <div class="container">
+            <img class="logo" src="assets/img/logo.jpg" alt="logo da F4life" />
+            <nav>
+                <ul class="header-navigation">
+                    <li class="nav-list-item">
+                        <a class="header-navigation-item" href="#about">Quem Somos</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="header-navigation-item" href="#products">Produtos</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="header-navigation-item" href="#contact">Fale Conosco</a>
+                    </li>
+                    <li class="close-item">
+                        <img class="close-icon pointer" src="assets/img/close-icon.svg" alt="ícone de fechar menu" />
+                    </li>
+                </ul>
+            </nav>
+            <img class="menu-icon pointer" src="assets/img/menu-icon.svg" alt="ícone de menu" />
+        </div>
     </header>
     <main>
-      <section class="section" id="about"></section>
-      <section class="section" id="contact"></section>
+        <section class="section" id="about">
+            <div class="container">
+                <div class="title-div">
+                    <h2 class="section-title">Quem somos</h2>
+                </div>
+                <div class="content">
+                    <p class="first-phrase">
+                        F4Life é uma empresa de alugués de moradias para pessoas universitárias
+                    </p>
+                    <img class="about-ilustration" src="assets/img/ilustration.svg" alt="" />
+                </div>
+            </div>
+        </section>
+        <section class="section" id="products">
+            <div class="container">
+                <div class="title-div">
+                    <h2 class="section-title">Produtos</h2>
+                </div>
+                <div class="content">
+                    <p class="first-phrase">Escolha o seu tipo de moradia</p>
+                    <div class="cards">
+                        <div class="card">
+                            <figure>
+                                <img src="/assets/img/moradia.png" alt="" class="product-icon">
+                                <figcaption>compartilhada</figcaption>
+                            </figure>
+
+                        </div>
+                        <div class="card">
+                            <figure>
+                                <img src="/assets/img/kitnet.png" alt="" class="product-icon">
+                                <figcaption>kitnet</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="title-div">
+                    <h2 class="section-title-light">Fale conosco</h2>
+                </div>
+                <div class="text-light">
+                    <form class="contact-form" action="">
+                        <fieldset>
+                            <input type="text" name="email" placeholder="email" class="form-email">
+                            <label  class="form-message-label" for="message">mensagem</label>
+                            <textarea name="message" class="form-message-area" id="message" ></textarea>
+                            <input class="form-submit" type="button" value="enviar">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer id="footer"></footer>
+    <footer class="section" id="footer">
+        <div class="container">
+            <p class="first-phrase-light">Siga-nos nas redes sociais</p>
+            <ul class="social-medias">
+                <li class="media-icon"><a target="_blank" href="http://facebook.com">E</a></li>
+                <li class="media-icon"><a target="_blank" href="http://instagram.com">Q</a></li>
+                <li class="media-icon"><a target="_blank" href="http://twitter.com">D</a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
