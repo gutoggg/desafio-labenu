@@ -46,9 +46,9 @@
                 <div class="content">
                     <p class="first-phrase">
                         F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.
-                        <span class="description" > <br>A F4Life realiza reformas e prepara moradias 
-                        para recepção de pessoas universitárias em um ambiente específico 
-                        e otimizado para a vida de graduação.</span>
+                        <span class="description"> <br>A F4Life realiza reformas e prepara moradias
+                            para recepção de pessoas universitárias em um ambiente específico
+                            e otimizado para a vida de graduação.</span>
                     </p>
 
                     <img class="about-ilustration" src="assets/img/ilustration.svg" alt="" />
@@ -88,10 +88,14 @@
                 <div class="text-light">
                     <form class="contact-form" action="">
                         <fieldset>
-                            <input type="text" name="email" placeholder="email" class="form-email">
-                            <label  class="form-message-label" for="message">mensagem</label>
-                            <textarea name="message" class="form-message-area" id="message" ></textarea>
-                            <input class="form-submit pointer" type="button" value="enviar">
+                            <input type="text" name="email" placeholder="email" class="form-email" data-form-email>
+                            <label class="form-message-label" for="message" >mensagem</label>
+                            <textarea name="message" class="form-message-area" id="message" data-form-message></textarea>
+                            <span class="form-bottom-part">
+                                <input class="form-submit pointer" type="button" value="enviar" data-form-submit/>
+                                <label class="error-label" for="message" data-form-alert></label>
+                            </span>
+                            
                         </fieldset>
                     </form>
                 </div>
